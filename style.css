@@ -1,0 +1,112 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-image: url(http://www.kempinski.com/assets/kempinski-hotel-bristol-berlin/RestaurantsBars/Bilder/_resampled/SetWidth1700-Kempinski-Hotel-Bristol-Berlin-Gastronomie-Bristol-Bar.jpg);*/
+}
+h1, h3{
+  color: white;
+  font-family: "Open Sans", 
+}
+
+
+
+
+body, p{
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  padding-left: 50px;
+  text-align: center;
+}
+/*-------------------------------------input-----------------------------*/
+.barInput {
+  width: 700px;
+  height: 50px;
+  background-color:antiquewhite;
+  border: 10px solid white;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  align-content: center middle;
+  margin:auto;
+}
+.barInput button {
+  height: 35px;
+  width: 150px:
+}
+.barInput input {
+  height: 30px;
+  width: 150px:
+}
+/*-------------------------------------map-----------------------------*/
+#map {
+  height: 600px;
+  width: 700px;
+  border: 15px solid white;
+  margin:auto;
+  z-index: -1;
+
+}
+/*-------------------------------------roadmap-----------------------------*/
+.road-map-selector{
+  position: fixed;
+  top:24%;
+  background-color:antiquewhite;
+  border: 15px solid white;
+  margin:auto;
+}
+.barList{
+  margin:auto;
+  width: 700px;
+  background-color:antiquewhite;
+  border: 15px solid white;
+  align-content: center middle;
+}
+
+button, input {
+  background-color: white;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*-------------------------------------center placeholder-----------------------------*/
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+/*-------------------------------------prints only map and routes-----------------------------*/
+
+@media print {
+     /*print css here*/
+     .noprint, h1, h2, h3 {
+      display: none !important;
+      font-size: 0; /* Trick to remove white spaces as display none replaces data with white spaces*/
+     }
+
+     body {
+      margin: 0 auto !important;
+      padding-left: 0 !important;
+      background-image: none !important;
+     }
+
+     p {
+   text-align: left !important;
+    }
+
+  
+}
